@@ -1,0 +1,10 @@
+ignore:
+  cves:
+    - CVE-0000-IGNORE-EXAMPLE
+  packages:
+    - examplepkg
+  images:
+    - nginx:dev-only
+justifications:
+  CVE-0000-IGNORE-EXAMPLE: "Accepted risk for demo. Mitigated by network policy."
+
