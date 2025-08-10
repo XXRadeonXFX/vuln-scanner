@@ -1,0 +1,47 @@
+name: Container Image Vulnerability Scan
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: 'Image reference'
+        required: true
+        default: 'nginx:1.23'
+  push:
+    branches: [ main ]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Python deps
+        run: python3 -m pip install -r requirements.txt
+      - name: Install Trivy
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+          TRIVY_VER=0.52.0
+          wget https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VER}/trivy_${TRIVY_VER}_Linux-64bit.deb
+          sudo dpkg -i trivy_${TRIVY_VER}_Linux-64bit.deb
+      - name: Configure policy
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          PUSHGATEWAY_URL: ${{ secrets.PUSHGATEWAY_URL }}
+        run: |
+          cp config/policy.env.example config/policy.env
+          sed -i 's/SEVERITY_FAIL_LEVEL=HIGH/SEVERITY_FAIL_LEVEL=HIGH/' config/policy.env
+          sed -i 's/IGNORE_UNFIXED=true/IGNORE_UNFIXED=true/' config/policy.env
+      - name: Scan
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          PUSHGATEWAY_URL: ${{ secrets.PUSHGATEWAY_URL }}
+        run: |
+          IMAGE="${{ github.event.inputs.image || 'nginx:1.23' }}"
+          ./scripts/scan_image.sh "$IMAGE"
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-reports
+          path: reports/**
+

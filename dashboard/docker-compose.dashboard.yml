@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  pushgateway:
+    image: prom/pushgateway:latest
+    ports: ["9091:9091"]
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports: ["9090:9090"]
+    depends_on: [pushgateway]
+  grafana:
+    image: grafana/grafana:latest
+    ports: ["3000:3000"]
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on: [prometheus]
+
