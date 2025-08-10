@@ -1,0 +1,462 @@
+{
+  "image": "nginx:1.23",
+  "timestamp": 1754833664,
+  "severity_counts": {
+    "LOW": 17,
+    "MEDIUM": 97,
+    "HIGH": 60,
+    "CRITICAL": 10
+  },
+  "offending_sample": [
+    {
+      "id": "CVE-2023-38545",
+      "severity": "CRITICAL",
+      "pkg": "curl",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u10",
+      "title": "curl: heap based buffer overflow in the SOCKS5 proxy handshake",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-38545"
+    },
+    {
+      "id": "CVE-2023-27533",
+      "severity": "HIGH",
+      "pkg": "curl",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u8",
+      "title": "curl: TELNET option IAC injection",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-27533"
+    },
+    {
+      "id": "CVE-2023-27534",
+      "severity": "HIGH",
+      "pkg": "curl",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u8",
+      "title": "curl: SFTP path ~ resolving discrepancy",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-27534"
+    },
+    {
+      "id": "CVE-2024-2398",
+      "severity": "HIGH",
+      "pkg": "curl",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u12",
+      "title": "curl: HTTP/2 push headers memory-leak",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398"
+    },
+    {
+      "id": "CVE-2022-1304",
+      "severity": "HIGH",
+      "pkg": "e2fsprogs",
+      "installed": "1.46.2-2",
+      "fixed": "1.46.2-2+deb11u1",
+      "title": "e2fsprogs: out-of-bounds read/write via crafted filesystem",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2022-1304"
+    },
+    {
+      "id": "CVE-2023-4911",
+      "severity": "HIGH",
+      "pkg": "libc-bin",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u7",
+      "title": "glibc: buffer overflow in ld.so leading to privilege escalation",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-4911"
+    },
+    {
+      "id": "CVE-2024-2961",
+      "severity": "HIGH",
+      "pkg": "libc-bin",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u9",
+      "title": "glibc: Out of bounds write in iconv may lead to remote code execution",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-2961"
+    },
+    {
+      "id": "CVE-2024-33599",
+      "severity": "HIGH",
+      "pkg": "libc-bin",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u10",
+      "title": "glibc: stack-based buffer overflow in netgroup cache",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-33599"
+    },
+    {
+      "id": "CVE-2025-4802",
+      "severity": "HIGH",
+      "pkg": "libc-bin",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u13",
+      "title": "glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2025-4802"
+    },
+    {
+      "id": "CVE-2023-4911",
+      "severity": "HIGH",
+      "pkg": "libc6",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u7",
+      "title": "glibc: buffer overflow in ld.so leading to privilege escalation",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-4911"
+    },
+    {
+      "id": "CVE-2024-2961",
+      "severity": "HIGH",
+      "pkg": "libc6",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u9",
+      "title": "glibc: Out of bounds write in iconv may lead to remote code execution",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-2961"
+    },
+    {
+      "id": "CVE-2024-33599",
+      "severity": "HIGH",
+      "pkg": "libc6",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u10",
+      "title": "glibc: stack-based buffer overflow in netgroup cache",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-33599"
+    },
+    {
+      "id": "CVE-2025-4802",
+      "severity": "HIGH",
+      "pkg": "libc6",
+      "installed": "2.31-13+deb11u6",
+      "fixed": "2.31-13+deb11u13",
+      "title": "glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2025-4802"
+    },
+    {
+      "id": "CVE-2022-1304",
+      "severity": "HIGH",
+      "pkg": "libcom-err2",
+      "installed": "1.46.2-2",
+      "fixed": "1.46.2-2+deb11u1",
+      "title": "e2fsprogs: out-of-bounds read/write via crafted filesystem",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2022-1304"
+    },
+    {
+      "id": "CVE-2023-38545",
+      "severity": "CRITICAL",
+      "pkg": "libcurl4",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u10",
+      "title": "curl: heap based buffer overflow in the SOCKS5 proxy handshake",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-38545"
+    },
+    {
+      "id": "CVE-2023-27533",
+      "severity": "HIGH",
+      "pkg": "libcurl4",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u8",
+      "title": "curl: TELNET option IAC injection",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-27533"
+    },
+    {
+      "id": "CVE-2023-27534",
+      "severity": "HIGH",
+      "pkg": "libcurl4",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u8",
+      "title": "curl: SFTP path ~ resolving discrepancy",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-27534"
+    },
+    {
+      "id": "CVE-2024-2398",
+      "severity": "HIGH",
+      "pkg": "libcurl4",
+      "installed": "7.74.0-1.3+deb11u7",
+      "fixed": "7.74.0-1.3+deb11u12",
+      "title": "curl: HTTP/2 push headers memory-leak",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-2398"
+    },
+    {
+      "id": "CVE-2024-45491",
+      "severity": "CRITICAL",
+      "pkg": "libexpat1",
+      "installed": "2.2.10-2+deb11u5",
+      "fixed": "2.2.10-2+deb11u6",
+      "title": "libexpat: Integer Overflow or Wraparound",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-45491"
+    },
+    {
+      "id": "CVE-2024-45492",
+      "severity": "CRITICAL",
+      "pkg": "libexpat1",
+      "installed": "2.2.10-2+deb11u5",
+      "fixed": "2.2.10-2+deb11u6",
+      "title": "libexpat: integer overflow",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-45492"
+    },
+    {
+      "id": "CVE-2023-52425",
+      "severity": "HIGH",
+      "pkg": "libexpat1",
+      "installed": "2.2.10-2+deb11u5",
+      "fixed": "2.2.10-2+deb11u6",
+      "title": "expat: parsing large tokens can trigger a denial of service",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-52425"
+    },
+    {
+      "id": "CVE-2024-45490",
+      "severity": "HIGH",
+      "pkg": "libexpat1",
+      "installed": "2.2.10-2+deb11u5",
+      "fixed": "2.2.10-2+deb11u6",
+      "title": "libexpat: Negative Length Parsing Vulnerability in libexpat",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-45490"
+    },
+    {
+      "id": "CVE-2022-1304",
+      "severity": "HIGH",
+      "pkg": "libext2fs2",
+      "installed": "1.46.2-2",
+      "fixed": "1.46.2-2+deb11u1",
+      "title": "e2fsprogs: out-of-bounds read/write via crafted filesystem",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2022-1304"
+    },
+    {
+      "id": "CVE-2025-27363",
+      "severity": "HIGH",
+      "pkg": "libfreetype6",
+      "installed": "2.10.4+dfsg-1+deb11u1",
+      "fixed": "2.10.4+dfsg-1+deb11u2",
+      "title": "freetype: OOB write when attempting to parse font subglyph structures related to TrueType GX and variable font files",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2025-27363"
+    },
+    {
+      "id": "CVE-2024-0553",
+      "severity": "HIGH",
+      "pkg": "libgnutls30",
+      "installed": "3.7.1-5+deb11u3",
+      "fixed": "3.7.1-5+deb11u5",
+      "title": "gnutls: incomplete fix for CVE-2023-5981",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-0553"
+    },
+    {
+      "id": "CVE-2024-0567",
+      "severity": "HIGH",
+      "pkg": "libgnutls30",
+      "installed": "3.7.1-5+deb11u3",
+      "fixed": "3.7.1-5+deb11u5",
+      "title": "gnutls: rejects certificate chain with distributed trust",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-0567"
+    },
+    {
+      "id": "CVE-2024-37371",
+      "severity": "CRITICAL",
+      "pkg": "libgssapi-krb5-2",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37371"
+    },
+    {
+      "id": "CVE-2024-37370",
+      "severity": "HIGH",
+      "pkg": "libgssapi-krb5-2",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37370"
+    },
+    {
+      "id": "CVE-2025-5222",
+      "severity": "HIGH",
+      "pkg": "libicu67",
+      "installed": "67.1-7",
+      "fixed": "67.1-7+deb11u1",
+      "title": "icu: Stack buffer overflow in the SRBRoot::addTag function",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2025-5222"
+    },
+    {
+      "id": "CVE-2024-37371",
+      "severity": "CRITICAL",
+      "pkg": "libk5crypto3",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37371"
+    },
+    {
+      "id": "CVE-2024-37370",
+      "severity": "HIGH",
+      "pkg": "libk5crypto3",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37370"
+    },
+    {
+      "id": "CVE-2024-37371",
+      "severity": "CRITICAL",
+      "pkg": "libkrb5-3",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37371"
+    },
+    {
+      "id": "CVE-2024-37370",
+      "severity": "HIGH",
+      "pkg": "libkrb5-3",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37370"
+    },
+    {
+      "id": "CVE-2024-37371",
+      "severity": "CRITICAL",
+      "pkg": "libkrb5support0",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37371"
+    },
+    {
+      "id": "CVE-2024-37370",
+      "severity": "HIGH",
+      "pkg": "libkrb5support0",
+      "installed": "1.18.3-6+deb11u3",
+      "fixed": "1.18.3-6+deb11u5",
+      "title": "krb5: GSS message token handling",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-37370"
+    },
+    {
+      "id": "CVE-2023-44487",
+      "severity": "HIGH",
+      "pkg": "libnghttp2-14",
+      "installed": "1.43.0-1",
+      "fixed": "1.43.0-1+deb11u1",
+      "title": "HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack)",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-44487"
+    },
+    {
+      "id": "CVE-2022-1304",
+      "severity": "HIGH",
+      "pkg": "libss2",
+      "installed": "1.46.2-2",
+      "fixed": "1.46.2-2+deb11u1",
+      "title": "e2fsprogs: out-of-bounds read/write via crafted filesystem",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2022-1304"
+    },
+    {
+      "id": "CVE-2020-22218",
+      "severity": "HIGH",
+      "pkg": "libssh2-1",
+      "installed": "1.9.0-2",
+      "fixed": "1.9.0-2+deb11u1",
+      "title": "libssh2: use-of-uninitialized-value in _libssh2_transport_read",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2020-22218"
+    },
+    {
+      "id": "CVE-2023-0464",
+      "severity": "HIGH",
+      "pkg": "libssl1.1",
+      "installed": "1.1.1n-0+deb11u4",
+      "fixed": "1.1.1n-0+deb11u5",
+      "title": "openssl: Denial of service by excessive resource usage in verifying X509 policy constraints",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-0464"
+    },
+    {
+      "id": "CVE-2023-50387",
+      "severity": "HIGH",
+      "pkg": "libsystemd0",
+      "installed": "247.3-7+deb11u2",
+      "fixed": "247.3-7+deb11u6",
+      "title": "bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-50387"
+    },
+    {
+      "id": "CVE-2023-50868",
+      "severity": "HIGH",
+      "pkg": "libsystemd0",
+      "installed": "247.3-7+deb11u2",
+      "fixed": "247.3-7+deb11u6",
+      "title": "bind9: Preparing an NSEC3 closest encloser proof can exhaust CPU resources",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-50868"
+    },
+    {
+      "id": "CVE-2023-52356",
+      "severity": "HIGH",
+      "pkg": "libtiff5",
+      "installed": "4.2.0-1+deb11u4",
+      "fixed": "4.2.0-1+deb11u6",
+      "title": "libtiff: Segment fault in libtiff  in TIFFReadRGBATileExt() leading to denial of service",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-52356"
+    },
+    {
+      "id": "CVE-2024-7006",
+      "severity": "HIGH",
+      "pkg": "libtiff5",
+      "installed": "4.2.0-1+deb11u4",
+      "fixed": "4.2.0-1+deb11u6",
+      "title": "libtiff: NULL pointer dereference in tif_dirinfo.c",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2024-7006"
+    },
+    {
+      "id": "CVE-2023-29491",
+      "severity": "HIGH",
+      "pkg": "libtinfo6",
+      "installed": "6.2+20201114-2+deb11u1",
+      "fixed": "6.2+20201114-2+deb11u2",
+      "title": "ncurses: Local users can trigger security-relevant memory corruption via malformed data",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-29491"
+    },
+    {
+      "id": "CVE-2023-50387",
+      "severity": "HIGH",
+      "pkg": "libudev1",
+      "installed": "247.3-7+deb11u2",
+      "fixed": "247.3-7+deb11u6",
+      "title": "bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-50387"
+    },
+    {
+      "id": "CVE-2023-50868",
+      "severity": "HIGH",
+      "pkg": "libudev1",
+      "installed": "247.3-7+deb11u2",
+      "fixed": "247.3-7+deb11u6",
+      "title": "bind9: Preparing an NSEC3 closest encloser proof can exhaust CPU resources",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-50868"
+    },
+    {
+      "id": "CVE-2023-4863",
+      "severity": "HIGH",
+      "pkg": "libwebp6",
+      "installed": "0.6.1-2.1+deb11u1",
+      "fixed": "0.6.1-2.1+deb11u2",
+      "title": "libwebp: Heap buffer overflow in WebP Codec",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-4863"
+    },
+    {
+      "id": "CVE-2023-3138",
+      "severity": "HIGH",
+      "pkg": "libx11-6",
+      "installed": "2:1.7.2-1",
+      "fixed": "2:1.7.2-1+deb11u1",
+      "title": "libX11: InitExt.c can overwrite unintended portions of the Display structure if the extension request leads to a buffer overflow",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-3138"
+    },
+    {
+      "id": "CVE-2023-43787",
+      "severity": "HIGH",
+      "pkg": "libx11-6",
+      "installed": "2:1.7.2-1",
+      "fixed": "2:1.7.2-1+deb11u2",
+      "title": "libX11: integer overflow in XCreateImage() leading to a heap overflow",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-43787"
+    },
+    {
+      "id": "CVE-2023-3138",
+      "severity": "HIGH",
+      "pkg": "libx11-data",
+      "installed": "2:1.7.2-1",
+      "fixed": "2:1.7.2-1+deb11u1",
+      "title": "libX11: InitExt.c can overwrite unintended portions of the Display structure if the extension request leads to a buffer overflow",
+      "primaryURL": "https://avd.aquasec.com/nvd/cve-2023-3138"
+    }
+  ]
+}
